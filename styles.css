@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    width: 279px;
+    width: 375px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,7 +61,7 @@ main {
 } 
 
 .big-div {
-    width: 279px;
+    width: 327px;
     margin-top: 24px;
     display: grid;
     grid-template-columns: repeat(4, 60px);
@@ -136,5 +136,67 @@ button {
     height: 64px;
     width: 133px;
 }
+
+.switch-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+/* toggle switch */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    height: 20px;
+    width: 20.6px;
+    appearance: none;
+    background-color: #D03F2F;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  input:hover {
+    cursor: pointer;
+  }
+  .tri-state-toggle {
+    display: flex;
+    justify-content: center;
+    border: 5px solid #242D44;
+    border-radius: 50px;
+    margin-left: 26px;
+    background: #242D44;
+  }
+  #one {
+    opacity: 1;
+  }
+
+  .numbers h3 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 11px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .numbers {
+    position: absolute;
+    right: 0px;
+    top: -16px;
+    width: 71px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
 
 

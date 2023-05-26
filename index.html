@@ -11,17 +11,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="body">
   <header>
     <h1>calc</h1>
-    <div>
+    <div class="switch-button">
+      <div class="numbers">
+        <h3>1</h3>
+        <h3>2</h3>
+        <h3>3</h3>
+      </div>
+
       <h2>THEME</h2>
+
+      <div id="toggle-container" class="tri-state-toggle">
+        <input class="button-switch" type="radio" name="toggle" id="one" />
+        <input class="button-switch" type="radio" name="toggle" id="two" />
+        <input class="button-switch" type="radio" name="toggle" id="three" />
+      </div>
     </div>
   </header>
 
   <main>
-    <div class="output">
-      <h1>0</h1>
+    <div id="output-div" class="output">
+      <h1 id="output">0</h1>
     </div>
 
     <div class="big-div">
@@ -46,7 +58,7 @@
     </div>
   </main>
 
-  
+  <script src="main.js"></script>
   
 </body>
 </html>
